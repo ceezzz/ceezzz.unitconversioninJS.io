@@ -14,4 +14,4 @@ document.addEventListener("DOMContentLoaded", funtion() {
       distResult.textContent = "Invalid input!";
     }
   });
-})
+});
