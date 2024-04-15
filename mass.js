@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     btnKgsToLbs.addEventListener("click", function() {
         const kgs = parseFloat(inputMass.value);
-        if (!isNaN(feet)) {
+        if (!isNaN(kgs)) {
             const lbs = kgs * 2.2;
             massResult.textContent = `${kgs} kgs = ${lbs.toFixed(2)} lbs`;
         } else {
