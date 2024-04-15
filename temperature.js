@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const fahrenheit = parseFloat(inputTemperature.value);
         if (!isNaN(fahrenheit)) {
             const kelvin = (fahrenheit - 32) * 5/9 + 273.15;
-            tempResult.textContent = `${temperature} degrees F = ${kelvin.toFixed(2)} kelvin`;
+            tempResult.textContent = `${temperature} degrees F = ${kelvin.toFixed(2)} K`;
         } else {
             tempResult.textContent = "Please enter a valid number for fahrenheit.";
         }
@@ -17,8 +17,8 @@ document.addEventListener("DOMContentLoaded", function() {
     btnKToF.addEventListener("click", function() {
         const kelvin = parseFloat(inputTemperature.value);
         if (!isNaN(kelvin)) {
-            const fehranheit = (kelvin − 273.15) * 9/5 + 32;
-            tempResult.textContent = `${kelvin} degrees kelvin = ${fehranheit.toFixed(2)} fehranheit`;
+            const fehranheit = (kelvin - 273.15) * 9/5 + 32;
+            tempResult.textContent = `${kelvin} degrees K = ${fehranheit.toFixed(2)} F`;
         } else {
             tempResult.textContent = "Please enter a valid number of kelvin.";
         }
