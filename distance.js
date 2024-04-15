@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", funtion() {
+document.addEventListener("DOMContentLoaded", funtion()) {
   const inputDistance = document.getElementById("distance");
   const btnInToFT = document.getElementById("in_to_ft");
   const btnFTToIn = document.getElementById("ft_to_in");
