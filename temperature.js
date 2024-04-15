@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const fahrenheit = parseFloat(inputTemperature.value);
         if (!isNaN(fahrenheit)) {
             const kelvin = (fahrenheit - 32) * 5/9 + 273.15;
-            tempResult.textContent = `${fahrenheit} &#8451 F = ${kelvin.toFixed(2)} K`;
+            tempResult.textContent = `${fahrenheit} F = ${kelvin.toFixed(2)} K`;
         } else {
             tempResult.textContent = "Please enter a valid number for fahrenheit.";
         }
